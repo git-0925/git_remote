@@ -9,3 +9,7 @@
 //Adalah server yang bisa digunakan untuk menyimpan repository git yang sudah dibuat di local
 //Terdapat yang gratis dan berbayar, data akan tersimpan di server selain di lokal
 //Contoh git server diantaranya : Github, gitlab, bitbucket dll
+
+//Git Server Repository
+//Git server pasti terdapat fitur untuk membuat git repository
+//Selain dengan membuat git repository, kita juga bisa melakukan duplikat dari repostory yang tersedia
