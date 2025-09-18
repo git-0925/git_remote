@@ -4,3 +4,8 @@
 //Serta merupakan distributed version control, kita tidak wajib terkoneksi inet ketika mengelola repository
 //Inet hanya dibutuhkan ketika mengirim perubahan/mengambil perubahan ke/dari server
 //Git juga dapat mendukung penggunaan beberapa git server sekaligus ketika membuat git repository
+
+//Git Server
+//Adalah server yang bisa digunakan untuk menyimpan repository git yang sudah dibuat di local
+//Terdapat yang gratis dan berbayar, data akan tersimpan di server selain di lokal
+//Contoh git server diantaranya : Github, gitlab, bitbucket dll
