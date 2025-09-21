@@ -92,3 +92,8 @@ git push --delete <nama-remote> <nama-tag> //menghapus tag di remote repository 
 //Atau bisa dibilang seperti sharing repository, kita bisa membuat file SubModule untuk terhubung ke library/git repository lain
 git submodule add <url-repository> <nama-folder> //menambah submodule ke dalam git repository
 //Ketika add submodule, otomatis semua git repository submodule tsb akan di clone ke dalam folder yang ditentukan dengan mendeteksi file .gitmodules
+
+//Fork
+//Salah satu Git Workflow adalah Forking Workflow, biasanya untuk forking (duplikasi) git repository yang tidak punya akses langsung ke lokal
+//Setelah kita melakukan perubahan di lokal, kita bisa pull request ke repository sumber forking tadi
+//Seperti inilah cara kerja yang terjadi di banyak projek opensource untuk ikut kontribusi
