@@ -72,3 +72,8 @@ git push <nama-remote> --tags //push semua tag ke remote repository
 git fetch <nama-remote> <nama-tag> //mengambil spesifik tag dari remote repository ke lokal
 git fetch <nama-remote> //mengambil semua tag dari remote repository ke lokal
 git push --delete <nama-remote> <nama-tag> //menghapus tag di remote repository (bukan di lokal saja)
+
+//Pull Request
+//Saat selesai pengerjaan di branch kita, perlu melakukan pull request/merge request ke branch utama
+//Fitur ini cocok untuk merevirw otomatis di remote git repository daripada manual dengan git diff
+//Fitur Pull/Merge Request terdapat git website dengan konfigurasi secara UI untuk pull dari branch apa dan tujuan branch mana
