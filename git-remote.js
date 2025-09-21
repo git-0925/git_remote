@@ -31,3 +31,11 @@ git remote add <nama-remote> <ssh-url> //menambah repository, nama remote reposi
 git remote //melihat remote repository yang sudah ditambahkan
 git remote get-url <nama-remote> //melihat remote repository dengan url-nya
 git remote rm <nama-remote> //menghapus remote repository
+
+//Push
+//Ketika sudah menyimpan perubahan di Git Project lokal dengan add dan commit, tidak sync otomatis ke remote repository
+//Perlu mengirimnya secara manual ke Git Server dengan perintah push
+git push <nama-remote> <nama-branch> //mengirim perubahan dengan branch yang sama
+git push <nama-remote> <lokal-branch>:<remote-branch> //mengirim perubahan dengan branch yang berbeda ke server
+git push origin --all //mengirim perubahan untuk semua branch
+git push --delete <nama-remote> <nama-branch> //menghapus branch yang ada di remote repository saja bukan branch di lokal
