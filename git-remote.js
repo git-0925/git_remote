@@ -59,3 +59,8 @@ git checkout -b <lokal-branch> <nama-remote>/<remote-branch> //membuat branch ba
 git fetch <nama-remote> //fetch semua branch di remote repository
 git fetch <nama-remote> <remote-branch> //fetch branch spesifik di remote repository
 git diff <lokal-branch>..<nama-remote>/<remote-branch> //untuk melihat perbandingan setelah fetch spesifik remote branch
+
+//Pull
+//Mengambil perubahan yang ada di remote repository, dan  disimpan di local repository
+//Saat melakukan pull, otomatis akan melakukan fetch terlebih dahulu. Hati-hati terjadi merge conflict saat pull
+git pull <nama-remote> <remote-branch>
