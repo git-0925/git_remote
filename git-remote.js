@@ -85,3 +85,10 @@ git push --delete <nama-remote> <nama-tag> //menghapus tag di remote repository 
 //Kemudian 'git merge origin/<remote-branch>' -> dari remote branch tujuan merge tadi ke branch asal/lokal (akan ada notif CONFLICT)
 //Langsung saja perbaiki dulu di code kita manual, dan lakukan add, commit, push seperti biasa untuk fixing commit
 //Terakhir kembali ke merge conflict di git web untuk melanjutkan pull/merge request yang sudah otomatis tidak conflict
+
+//Sub Module
+//Memungkinkan kita dapat menambahkan git repository ke git repository yang lain
+//Juga dapat melakukan menagement git repository terpisah, namun kita bisa mengakses git repository lain
+//Atau bisa dibilang seperti sharing repository, kita bisa membuat file SubModule untuk terhubung ke library/git repository lain
+git submodule add <url-repository> <nama-folder> //menambah submodule ke dalam git repository
+//Ketika add submodule, otomatis semua git repository submodule tsb akan di clone ke dalam folder yang ditentukan dengan mendeteksi file .gitmodules
