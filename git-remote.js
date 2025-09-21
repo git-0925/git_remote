@@ -46,3 +46,10 @@ Clone
 git clone <url-repository> //clone repository secara default membuat project dengan nama folder yg sama di lokal
 git clone <url-repository> <nama-folder> //jika ingin clone dengan custom nama folder di lokal
 //Default hasil clone akan berisi remote repository origin & branch utama di remote repository
+
+//Remote Branch
+//Secara default ketika clone remote repository, tidak semua remote branch akan dibuat di lokal git project
+git branch //untuk melihat daftar branch di lokal
+git branch -r //untuk melihat daftar branch di remote repository
+git branch -a //untuk melihat daftar branch di lokal & remote repository
+git checkout -b <lokal-branch> <nama-remote>/<remote-branch> //membuat branch baru di lokal dari remote branch
