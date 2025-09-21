@@ -13,3 +13,13 @@
 //Git Server Repository
 //Git server pasti terdapat fitur untuk membuat git repository
 //Selain dengan membuat git repository, kita juga bisa melakukan duplikat dari repostory yang tersedia
+
+//SSH (Secure Shell)
+//Protokol jaringan untuk komunikasi yang aman dan terenkripsi
+//Biasanya berbasis terminal, ketika menginstall git di windows otomatis juga akan menginstall SSH
+//Git memiliki mekanisme komunikasi berupa HTTP & SSH unutk berkomunikasi dengan Git Server
+//SSH Key adalah kunci yang digunakan untuk auth ke SSH server pada git
+ssh-keygen //untuk generate SSH Key di git bash, maka akan terdapat 2 key di local : private & public key
+//Bisa dilihat pada folder .ssh di Home, terdiri file id_rsa adalah private key & id_rsa.pub adalah public key
+github.com/settings/keys //tambahkan SSH public key ke Github agar terkoneksi ke Git Server & tidak perlu auth lagi nantinya
+ssh -T git@github.com //test koneksi ke Git Server di Git Bash setelah tambahkan SSH
