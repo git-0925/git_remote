@@ -39,3 +39,10 @@ git push <nama-remote> <nama-branch> //mengirim perubahan dengan branch yang sam
 git push <nama-remote> <lokal-branch>:<remote-branch> //mengirim perubahan dengan branch yang berbeda ke server
 git push origin --all //mengirim perubahan untuk semua branch
 git push --delete <nama-remote> <nama-branch> //menghapus branch yang ada di remote repository saja bukan branch di lokal
+
+Clone
+//Kondisi ketika kita ingin download project di remote repository/git server ke lokal
+//Secara otomatis akan di download juga sebagai git project
+git clone <url-repository> //clone repository secara default membuat project dengan nama folder yg sama di lokal
+git clone <url-repository> <nama-folder> //jika ingin clone dengan custom nama folder di lokal
+//Default hasil clone akan berisi remote repository origin & branch utama di remote repository
