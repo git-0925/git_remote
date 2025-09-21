@@ -53,3 +53,9 @@ git branch //untuk melihat daftar branch di lokal
 git branch -r //untuk melihat daftar branch di remote repository
 git branch -a //untuk melihat daftar branch di lokal & remote repository
 git checkout -b <lokal-branch> <nama-remote>/<remote-branch> //membuat branch baru di lokal dari remote branch
+
+//Fetch
+//Untuk mendapatkan perubahan terakhir dari remote repository, tapi tidak akan mengubah isi lokal projek
+git fetch <nama-remote> //fetch semua branch di remote repository
+git fetch <nama-remote> <remote-branch> //fetch branch spesifik di remote repository
+git diff <lokal-branch>..<nama-remote>/<remote-branch> //untuk melihat perbandingan setelah fetch spesifik remote branch
