@@ -64,3 +64,11 @@ git diff <lokal-branch>..<nama-remote>/<remote-branch> //untuk melihat perbandin
 //Mengambil perubahan yang ada di remote repository, dan  disimpan di local repository
 //Saat melakukan pull, otomatis akan melakukan fetch terlebih dahulu. Hati-hati terjadi merge conflict saat pull
 git pull <nama-remote> <remote-branch>
+
+//Tag
+//Ketika push ke remote repository, data Tag tidak dipush juga ke remote repository. Pelu push Tag manual juga
+git push <nama-remote> <nama-tag> //push spesifik tag ke remote repository
+git push <nama-remote> --tags //push semua tag ke remote repository
+git fetch <nama-remote> <nama-tag> //mengambil spesifik tag dari remote repository ke lokal
+git fetch <nama-remote> //mengambil semua tag dari remote repository ke lokal
+git push --delete <nama-remote> <nama-tag> //menghapus tag di remote repository (bukan di lokal saja)
