@@ -23,3 +23,11 @@ ssh-keygen //untuk generate SSH Key di git bash, maka akan terdapat 2 key di loc
 //Bisa dilihat pada folder .ssh di Home, terdiri file id_rsa adalah private key & id_rsa.pub adalah public key
 github.com/settings/keys //tambahkan SSH public key ke Github agar terkoneksi ke Git Server & tidak perlu auth lagi nantinya
 ssh -T git@github.com //test koneksi ke Git Server di Git Bash setelah tambahkan SSH
+
+//Remote Repository
+//Ketika membuat Git Project, Git tidak tahu tentang remote repository
+//Perlu diberitahu ke git project yang sudah dibuat tentang lokasi git repository
+git remote add <nama-remote> <ssh-url> //menambah repository, nama remote repository biasanya 'origin'
+git remote //melihat remote repository yang sudah ditambahkan
+git remote get-url <nama-remote> //melihat remote repository dengan url-nya
+git remote rm <nama-remote> //menghapus remote repository
