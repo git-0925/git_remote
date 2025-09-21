@@ -77,3 +77,11 @@ git push --delete <nama-remote> <nama-tag> //menghapus tag di remote repository 
 //Saat selesai pengerjaan di branch kita, perlu melakukan pull request/merge request ke branch utama
 //Fitur ini cocok untuk merevirw otomatis di remote git repository daripada manual dengan git diff
 //Fitur Pull/Merge Request terdapat git website dengan konfigurasi secara UI untuk pull dari branch apa dan tujuan branch mana
+
+//Merge Conflict
+//Dalam melakukan Pull Request, kadang terjadi Merge Conflict yang membuat tidak bisa merge otomatis
+//Kasus seperti ini, kita perlu melakukan merge dari branch asalnya dulu, lalu memperbaiki conflict nya
+//Pertama lakukan 'git fetch origin' pada branch asal untuk melihat mengambil perubahan tapi tidak langsung timpa ke lokal
+//Kemudian 'git merge origin/<remote-branch>' -> dari remote branch tujuan merge tadi ke branch asal/lokal (akan ada notif CONFLICT)
+//Langsung saja perbaiki dulu di code kita manual, dan lakukan add, commit, push seperti biasa untuk fixing commit
+//Terakhir kembali ke merge conflict di git web untuk melanjutkan pull/merge request yang sudah otomatis tidak conflict
